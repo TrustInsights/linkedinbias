@@ -1,0 +1,798 @@
+2025-12-10 18:30:43 | INFO | 🟢 Logging initialized
+2025-12-10 18:30:43 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:30:43 | INFO | 🚧 Dry Run: Database initialization skipped
+2025-12-10 18:30:43 | INFO | 📥 Loaded 76 pairs of posts
+2025-12-10 18:30:43 | INFO | 🚧 Running in SIMULATE mode - no API calls or DB writes
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 0: Bob Hutchins, PhD(c)/Bobbi Hutchins, PhD(c) - Would process (prompts: 2937/2939 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 1: Neville Hobson/Neva Hobson - Would process (prompts: 765/762 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 2: Dan Sanchez/Danielle Sanchez - Would process (prompts: 1537/1542 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 3: Barry Adams/Bernice Adams - Would process (prompts: 199/201 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 4: Nicholas Leffer/Nicole Leffer - Would process (prompts: 617/615 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 5: Jay Hawkins/Joy Hawkins - Would process (prompts: 670/670 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 6: George Terry/Georgia Terry - Would process (prompts: 615/616 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 7: Geoff Livingston/Georgette Livingston - Would process (prompts: 803/807 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 8: Mark Stouse/Marcia Stouse - Would process (prompts: 1438/1440 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 9: Marc Sirkin/Marci Sirkin - Would process (prompts: 1180/1181 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 10: Laurence Wall MPRII/Laura Wall MPRII - Would process (prompts: 1569/1566 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 11: Kenneth Lugar/Katherine Lugar - Would process (prompts: 972/974 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 12: Marshall Manson/Marsha Manson - Would process (prompts: 733/731 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 13: A. Lee Judge/A. Leigh Judge - Would process (prompts: 230/232 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 14: Andrew Bedford/Andrea Bedford - Would process (prompts: 285/285 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 15: Geoff Livingston/Georgette Livingston - Would process (prompts: 219/223 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 16: Sean Evans/Sarah Evans - Would process (prompts: 300/301 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 17: Emeric Ernoult/Emma Ernoult - Would process (prompts: 942/940 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 18: Neville Hobson/Neva Hobson - Would process (prompts: 762/759 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 19: Anthony Moorthy/Anita Moorthy - Would process (prompts: 2306/2304 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 20: Charles Gallese, Ph.D./Chiara Gallese, Ph.D. - Would process (prompts: 3034/3033 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 21: Henry Neumann/Henrietta Neumann - Would process (prompts: 1263/1267 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 22: Simon Domazetoska Schuster/Simona Domazetoska Schuster - Would process (prompts: 545/546 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 23: Dan Gershenson/Danielle Gershenson - Would process (prompts: 709/714 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 24: Peter Caputa/Petra Caputa - Would process (prompts: 3041/3041 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 25: David Spinks/Davina Spinks - Would process (prompts: 171/172 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 26: Asher Faus/Ashley Faus - Would process (prompts: 193/194 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 27: Michael Eisik/Michelle Eisik - Would process (prompts: 1170/1171 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 28: Mark Stouse/Marcia Stouse - Would process (prompts: 659/661 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 29: Mike Krieger/Michaela Krieger - Would process (prompts: 906/910 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 30: Sivakumar Veerappan/Sivakami Veerappan - Would process (prompts: 232/231 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 31: John Nielsen/Joan Nielsen - Would process (prompts: 1606/1606 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 32: Michal Bohanes/Michaela Bohanes - Would process (prompts: 794/796 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 33: Robert Rose/Roberta Rose - Would process (prompts: 2105/2106 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 34: Liam Rokusek/Lisa Rokusek - Would process (prompts: 1125/1125 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 35: Chase Mehta/Chelsi Mehta - Would process (prompts: 485/486 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 36: Asher Faus/Ashley Faus - Would process (prompts: 1292/1293 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 37: James H./Jamie H. - Would process (prompts: 183/183 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 38: Chris Theisen/Christina Theisen - Would process (prompts: 375/379 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 39: Terry Eichholz/Terri Eichholz - Would process (prompts: 433/433 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 40: Evan Kirstel/Eva Kirstel - Would process (prompts: 2814/2813 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 41: Michael Garrett/Michelle Garrett - Would process (prompts: 827/828 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 42: Ken Okel/Kendra Okel - Would process (prompts: 486/489 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 43: Colin Steele/Colleen Steele - Would process (prompts: 1450/1452 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 44: Andy Webb/Amy Webb - Would process (prompts: 2536/2535 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 45: Andrew Winston/Andrea Winston - Would process (prompts: 215/215 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 46: Karl Oudeman/Katarina Oudeman - Would process (prompts: 458/462 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 47: Evan Kirstel/Eva Kirstel - Would process (prompts: 376/375 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 48: Matt Cyr/Matilda Cyr - Would process (prompts: 657/660 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 49: Maciej Konarzewski/Maja Konarzewski - Would process (prompts: 612/610 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 50: Mark Stouse/Marcia Stouse - Would process (prompts: 449/451 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 51: Travis Macdonald/Tracy Macdonald - Would process (prompts: 438/437 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 52: Andy Brittain/Andrea Brittain - Would process (prompts: 731/733 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 53: John Bronée/Jeanette Bronée - Would process (prompts: 1155/1159 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 54: Dave Boerger/Dana Boerger - Would process (prompts: 1171/1171 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 55: Dharmesh Shah/Dharma Shah - Would process (prompts: 783/781 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 56: zouhair Aldalii/Zohra Aldalii - Would process (prompts: 224/222 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 57: Michael Martin/Michelle Martin - Would process (prompts: 302/303 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 58: Aurelius Jakajte/Aurelija Jakajte - Would process (prompts: 924/924 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 59: Brett Roer/Brittany Roer - Would process (prompts: 1075/1078 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 60: Bill Jensen/Billie Jensen - Would process (prompts: 1038/1040 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 61: Chris Heuer/Christina Heuer - Would process (prompts: 195/199 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 62: Paul Roetzer/Paula Roetzer - Would process (prompts: 2976/2977 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 63: Mark Buchan, MSC/Marcia Buchan, MSC - Would process (prompts: 1553/1555 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 64: Michael Hansen/Michele Hansen - Would process (prompts: 263/263 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 65: Luis Jarovsky, PhD/Luiza Jarovsky, PhD - Would process (prompts: 1869/1870 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 66: Oleg Andrienko/Olga Andrienko - Would process (prompts: 1389/1389 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 67: Daniel Peris/Daniela Peris - Would process (prompts: 231/232 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 68: Morten Saxnaes/Martina Saxnaes - Would process (prompts: 944/945 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 69: Jeff Greenhouse/Jennifer Greenhouse - Would process (prompts: 523/527 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 70: Marc Schoenen/Marci Schoenen - Would process (prompts: 89/90 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 71: Antonio Montano/Antonia Montano - Would process (prompts: 652/652 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 72: Dennis Shiao/Denise Shiao - Would process (prompts: 976/976 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 73: Brian Wojcik, PMP, AH-MC,.../Bonnie Wojcik, PMP, AH-MC,... - Would process (prompts: 423/424 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 74: Justin Levy/Justine Levy - Would process (prompts: 158/159 chars)
+2025-12-10 18:30:43 | INFO | [Simulate] Pair 75: Michael Reynolds, CFP®/Michelle Reynolds, CFP® - Would process (prompts: 352/353 chars)
+2025-12-10 18:30:43 | INFO | ✅ Simulation Complete - Total: 76, Processed: 76, Skipped: 0, Failed: 0
+2025-12-10 18:30:52 | INFO | 🟢 Logging initialized
+2025-12-10 18:30:52 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:30:52 | INFO | 💾 Database initialized
+2025-12-10 18:30:52 | INFO | 📥 Loaded 76 pairs of posts
+2025-12-10 18:30:52 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-10 18:30:53 | INFO | ✅ Model loaded on device: mps:0
+2025-12-10 18:30:53 | INFO | 🟢 LLaMA embedder initialized
+2025-12-10 18:31:26 | INFO | ✅ Audit Complete - Total: 76, Processed: 76, Skipped: 0, Failed: 0
+2025-12-10 18:31:26 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-10 18:31:26 | INFO |    Mean Similarity: 0.9933
+2025-12-10 18:31:26 | INFO |    Std Deviation: 0.0083
+2025-12-10 18:31:26 | INFO |    95% CI: [0.9913, 0.9952]
+2025-12-10 18:31:26 | INFO |    P-value: 0.0000
+2025-12-10 18:31:26 | INFO |    Effect Size (Cohen's d): -0.8085
+2025-12-10 18:31:26 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.808, p=0.0000)
+2025-12-10 18:33:48 | INFO | 🟢 Logging initialized
+2025-12-10 18:33:48 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 18:33:48 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 18:33:48 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 18:33:48 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 18:33:48 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 18:33:48 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpl993aawm
+2025-12-10 18:33:48 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 18:33:48 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 18:33:48 | INFO | 🟢 Logging initialized
+2025-12-10 18:33:48 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:33:48 | INFO | 💾 Database initialized
+2025-12-10 18:33:48 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpz4j7_cob
+2025-12-10 18:34:13 | INFO | 🟢 Logging initialized
+2025-12-10 18:34:13 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:34:13 | INFO | 💾 Database initialized
+2025-12-10 18:34:13 | INFO | 📥 Loaded 76 pairs of posts
+2025-12-10 18:34:13 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-10 18:34:14 | INFO | ✅ Model loaded on device: mps:0
+2025-12-10 18:34:14 | INFO | 🟢 LLaMA embedder initialized
+2025-12-10 18:34:41 | INFO | ✅ Audit Complete - Total: 76, Processed: 76, Skipped: 0, Failed: 0
+2025-12-10 18:34:41 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-10 18:34:41 | INFO |    Mean Similarity: 0.9933
+2025-12-10 18:34:41 | INFO |    Std Deviation: 0.0083
+2025-12-10 18:34:41 | INFO |    95% CI: [0.9913, 0.9952]
+2025-12-10 18:34:41 | INFO |    P-value: 0.0000
+2025-12-10 18:34:41 | INFO |    Effect Size (Cohen's d): -0.8085
+2025-12-10 18:34:41 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.808, p=0.0000)
+2025-12-10 18:35:30 | INFO | 🟢 Logging initialized
+2025-12-10 18:35:30 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:35:30 | INFO | 💾 Database initialized
+2025-12-10 18:35:30 | INFO | 📥 Loaded 76 pairs of posts
+2025-12-10 18:35:30 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-10 18:35:31 | ERROR | 🛑 Failed to load model: LlamaForCausalLM.__init__() got an unexpected keyword argument 'dtype'
+2025-12-10 18:37:29 | INFO | 🟢 Logging initialized
+2025-12-10 18:37:29 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:37:29 | INFO | 🚧 Dry Run: Database initialization skipped
+2025-12-10 18:37:29 | INFO | 📥 Loaded 76 pairs of posts
+2025-12-10 18:37:29 | INFO | 🚧 Running in SIMULATE mode - no API calls or DB writes
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 0: Bob Hutchins, PhD(c)/Bobbi Hutchins, PhD(c) - Would process (prompts: 2937/2939 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 1: Neville Hobson/Neva Hobson - Would process (prompts: 765/762 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 2: Dan Sanchez/Danielle Sanchez - Would process (prompts: 1537/1542 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 3: Barry Adams/Bernice Adams - Would process (prompts: 199/201 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 4: Nicholas Leffer/Nicole Leffer - Would process (prompts: 617/615 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 5: Jay Hawkins/Joy Hawkins - Would process (prompts: 670/670 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 6: George Terry/Georgia Terry - Would process (prompts: 615/616 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 7: Geoff Livingston/Georgette Livingston - Would process (prompts: 803/807 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 8: Mark Stouse/Marcia Stouse - Would process (prompts: 1438/1440 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 9: Marc Sirkin/Marci Sirkin - Would process (prompts: 1180/1181 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 10: Laurence Wall MPRII/Laura Wall MPRII - Would process (prompts: 1569/1566 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 11: Kenneth Lugar/Katherine Lugar - Would process (prompts: 972/974 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 12: Marshall Manson/Marsha Manson - Would process (prompts: 733/731 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 13: A. Lee Judge/A. Leigh Judge - Would process (prompts: 230/232 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 14: Andrew Bedford/Andrea Bedford - Would process (prompts: 285/285 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 15: Geoff Livingston/Georgette Livingston - Would process (prompts: 219/223 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 16: Sean Evans/Sarah Evans - Would process (prompts: 300/301 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 17: Emeric Ernoult/Emma Ernoult - Would process (prompts: 942/940 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 18: Neville Hobson/Neva Hobson - Would process (prompts: 762/759 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 19: Anthony Moorthy/Anita Moorthy - Would process (prompts: 2306/2304 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 20: Charles Gallese, Ph.D./Chiara Gallese, Ph.D. - Would process (prompts: 3034/3033 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 21: Henry Neumann/Henrietta Neumann - Would process (prompts: 1263/1267 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 22: Simon Domazetoska Schuster/Simona Domazetoska Schuster - Would process (prompts: 545/546 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 23: Dan Gershenson/Danielle Gershenson - Would process (prompts: 709/714 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 24: Peter Caputa/Petra Caputa - Would process (prompts: 3041/3041 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 25: David Spinks/Davina Spinks - Would process (prompts: 171/172 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 26: Asher Faus/Ashley Faus - Would process (prompts: 193/194 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 27: Michael Eisik/Michelle Eisik - Would process (prompts: 1170/1171 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 28: Mark Stouse/Marcia Stouse - Would process (prompts: 659/661 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 29: Mike Krieger/Michaela Krieger - Would process (prompts: 906/910 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 30: Sivakumar Veerappan/Sivakami Veerappan - Would process (prompts: 232/231 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 31: John Nielsen/Joan Nielsen - Would process (prompts: 1606/1606 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 32: Michal Bohanes/Michaela Bohanes - Would process (prompts: 794/796 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 33: Robert Rose/Roberta Rose - Would process (prompts: 2105/2106 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 34: Liam Rokusek/Lisa Rokusek - Would process (prompts: 1125/1125 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 35: Chase Mehta/Chelsi Mehta - Would process (prompts: 485/486 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 36: Asher Faus/Ashley Faus - Would process (prompts: 1292/1293 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 37: James H./Jamie H. - Would process (prompts: 183/183 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 38: Chris Theisen/Christina Theisen - Would process (prompts: 375/379 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 39: Terry Eichholz/Terri Eichholz - Would process (prompts: 433/433 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 40: Evan Kirstel/Eva Kirstel - Would process (prompts: 2814/2813 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 41: Michael Garrett/Michelle Garrett - Would process (prompts: 827/828 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 42: Ken Okel/Kendra Okel - Would process (prompts: 486/489 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 43: Colin Steele/Colleen Steele - Would process (prompts: 1450/1452 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 44: Andy Webb/Amy Webb - Would process (prompts: 2536/2535 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 45: Andrew Winston/Andrea Winston - Would process (prompts: 215/215 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 46: Karl Oudeman/Katarina Oudeman - Would process (prompts: 458/462 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 47: Evan Kirstel/Eva Kirstel - Would process (prompts: 376/375 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 48: Matt Cyr/Matilda Cyr - Would process (prompts: 657/660 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 49: Maciej Konarzewski/Maja Konarzewski - Would process (prompts: 612/610 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 50: Mark Stouse/Marcia Stouse - Would process (prompts: 449/451 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 51: Travis Macdonald/Tracy Macdonald - Would process (prompts: 438/437 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 52: Andy Brittain/Andrea Brittain - Would process (prompts: 731/733 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 53: John Bronée/Jeanette Bronée - Would process (prompts: 1155/1159 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 54: Dave Boerger/Dana Boerger - Would process (prompts: 1171/1171 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 55: Dharmesh Shah/Dharma Shah - Would process (prompts: 783/781 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 56: zouhair Aldalii/Zohra Aldalii - Would process (prompts: 224/222 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 57: Michael Martin/Michelle Martin - Would process (prompts: 302/303 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 58: Aurelius Jakajte/Aurelija Jakajte - Would process (prompts: 924/924 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 59: Brett Roer/Brittany Roer - Would process (prompts: 1075/1078 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 60: Bill Jensen/Billie Jensen - Would process (prompts: 1038/1040 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 61: Chris Heuer/Christina Heuer - Would process (prompts: 195/199 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 62: Paul Roetzer/Paula Roetzer - Would process (prompts: 2976/2977 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 63: Mark Buchan, MSC/Marcia Buchan, MSC - Would process (prompts: 1553/1555 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 64: Michael Hansen/Michele Hansen - Would process (prompts: 263/263 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 65: Luis Jarovsky, PhD/Luiza Jarovsky, PhD - Would process (prompts: 1869/1870 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 66: Oleg Andrienko/Olga Andrienko - Would process (prompts: 1389/1389 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 67: Daniel Peris/Daniela Peris - Would process (prompts: 231/232 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 68: Morten Saxnaes/Martina Saxnaes - Would process (prompts: 944/945 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 69: Jeff Greenhouse/Jennifer Greenhouse - Would process (prompts: 523/527 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 70: Marc Schoenen/Marci Schoenen - Would process (prompts: 89/90 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 71: Antonio Montano/Antonia Montano - Would process (prompts: 652/652 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 72: Dennis Shiao/Denise Shiao - Would process (prompts: 976/976 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 73: Brian Wojcik, PMP, AH-MC,.../Bonnie Wojcik, PMP, AH-MC,... - Would process (prompts: 423/424 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 74: Justin Levy/Justine Levy - Would process (prompts: 158/159 chars)
+2025-12-10 18:37:29 | INFO | [Simulate] Pair 75: Michael Reynolds, CFP®/Michelle Reynolds, CFP® - Would process (prompts: 352/353 chars)
+2025-12-10 18:38:26 | INFO | 🟢 Logging initialized
+2025-12-10 18:38:26 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:38:26 | INFO | 💾 Database initialized
+2025-12-10 18:38:26 | INFO | 📥 Loaded 76 pairs of posts
+2025-12-10 18:38:26 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-10 18:38:27 | INFO | ✅ Model loaded on device: mps:0
+2025-12-10 18:38:27 | INFO | 🟢 LLaMA embedder initialized
+2025-12-10 18:38:57 | INFO | ✅ Audit Complete - Total: 76, Processed: 76, Skipped: 0, Failed: 0
+2025-12-10 18:38:57 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-10 18:38:57 | INFO |    Mean Similarity: 0.9933
+2025-12-10 18:38:57 | INFO |    Std Deviation: 0.0083
+2025-12-10 18:38:57 | INFO |    95% CI: [0.9914, 0.9952]
+2025-12-10 18:38:57 | INFO |    P-value: 0.0000
+2025-12-10 18:38:57 | INFO |    Effect Size (Cohen's d): -0.8086
+2025-12-10 18:38:57 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.809, p=0.0000)
+2025-12-10 18:59:42 | INFO | 🟢 Logging initialized
+2025-12-10 18:59:42 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 18:59:42 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 18:59:42 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 18:59:42 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 18:59:42 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 18:59:42 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmppby_9qal
+2025-12-10 18:59:42 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 18:59:42 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 18:59:42 | INFO | 🟢 Logging initialized
+2025-12-10 18:59:42 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 18:59:42 | INFO | 💾 Database initialized
+2025-12-10 18:59:42 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpg5ze49ey
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp992smbhs/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpx7hksh25/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpnijpyg16/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpfdu3hy4c/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp5cl_gun7/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpwta_6rvj/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpkz730wbz/analysis/analysis.htm
+2025-12-10 18:59:42 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpio0qdfjo/analysis/analysis.htm
+2025-12-10 20:09:39 | INFO | 🟢 Logging initialized
+2025-12-10 20:09:39 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:09:39 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 20:09:39 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:09:39 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 20:09:39 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 20:09:39 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpugwobh8n
+2025-12-10 20:09:39 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 20:09:39 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 20:09:39 | INFO | 🟢 Logging initialized
+2025-12-10 20:09:39 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:09:39 | INFO | 💾 Database initialized
+2025-12-10 20:09:39 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpb9v30lzc
+2025-12-10 20:12:11 | INFO | 🟢 Logging initialized
+2025-12-10 20:12:11 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:12:11 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 20:12:11 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:12:11 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 20:12:11 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 20:12:11 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp6inrgzps
+2025-12-10 20:12:11 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 20:12:11 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 20:12:11 | INFO | 🟢 Logging initialized
+2025-12-10 20:12:11 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:12:11 | INFO | 💾 Database initialized
+2025-12-10 20:12:11 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpndt9lcw3
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmptd4qbp82/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpoij03hxx/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp2nvzrqs4/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp_d017nk4/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpy17qw2s7/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp5r23lz6o/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpeo3uaay1/analysis/analysis.htm
+2025-12-10 20:12:11 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpyyj1jfh3/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | 🟢 Logging initialized
+2025-12-10 20:12:58 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:12:58 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 20:12:58 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:12:58 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 20:12:58 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 20:12:58 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpekqso56x
+2025-12-10 20:12:58 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 20:12:58 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 20:12:58 | INFO | 🟢 Logging initialized
+2025-12-10 20:12:58 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:12:58 | INFO | 💾 Database initialized
+2025-12-10 20:12:58 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp4k4x1yho
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpye0_lkjo/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp1nt75ahx/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpt99u613z/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpyb7ee1g6/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpynpkps7a/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpv8rg6515/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpstsrvdm4/analysis/analysis.htm
+2025-12-10 20:12:58 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpyqownc54/analysis/analysis.htm
+2025-12-10 20:13:53 | INFO | 🟢 Logging initialized
+2025-12-10 20:13:53 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:13:53 | INFO | 💾 Database initialized
+2025-12-10 20:13:53 | INFO | 📥 Loaded 158 pairs of posts
+2025-12-10 20:13:53 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-10 20:13:56 | INFO | ✅ Model loaded on device: mps:0
+2025-12-10 20:13:56 | INFO | 🟢 LLaMA embedder initialized
+2025-12-10 20:13:56 | INFO | 🗑️ Cleared 228 existing records for fresh analysis
+2025-12-10 20:14:59 | INFO | ✅ Audit Complete - Total: 158, Processed: 158, Skipped: 0, Failed: 0
+2025-12-10 20:14:59 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-10 20:14:59 | INFO |    Mean Similarity: 0.9934
+2025-12-10 20:14:59 | INFO |    Std Deviation: 0.0074
+2025-12-10 20:14:59 | INFO |    95% CI (Bootstrap): [0.9920, 0.9944]
+2025-12-10 20:14:59 | INFO |    P-value (t-test): 0.0000
+2025-12-10 20:14:59 | INFO |    Effect Size (Cohen's d): -0.8942
+2025-12-10 20:14:59 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.894, p=0.0000) [non-parametric tests used]
+2025-12-10 20:14:59 | INFO | Report generated: output/analysis/analysis.htm
+2025-12-10 20:14:59 | INFO | 📄 Report generated: output/analysis/analysis.htm
+2025-12-10 20:14:59 | INFO | Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-10 20:14:59 | INFO | 📄 Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-10 20:14:59 | INFO | README explainer generated: output/README.htm
+2025-12-10 20:14:59 | INFO | 📄 README explainer generated: output/README.htm
+2025-12-10 20:30:18 | INFO | 🟢 Logging initialized
+2025-12-10 20:30:18 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:30:18 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 20:30:18 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:30:18 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 20:30:18 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 20:30:18 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpmpv7brv_
+2025-12-10 20:30:18 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 20:30:18 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 20:30:18 | INFO | 🟢 Logging initialized
+2025-12-10 20:30:18 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:30:18 | INFO | 💾 Database initialized
+2025-12-10 20:30:18 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpfupdii73
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp_zqwi768/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp3h2et14n/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpsgjj3cbv/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpb_c64iyl/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpvqkyf92d/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmplg9vz5oz/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp9alzozfm/analysis/analysis.htm
+2025-12-10 20:30:18 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp1y5cohq2/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | 🟢 Logging initialized
+2025-12-10 20:30:28 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:30:28 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-10 20:30:28 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-10 20:30:28 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-10 20:30:28 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-10 20:30:28 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpjmrm3y76
+2025-12-10 20:30:28 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-10 20:30:28 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-10 20:30:28 | INFO | 🟢 Logging initialized
+2025-12-10 20:30:28 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:30:28 | INFO | 💾 Database initialized
+2025-12-10 20:30:28 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp3nm0ya1t
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpzuk80_a5/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpk7rynz2c/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpmmhgusli/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpz8_ujqqk/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpxxxdyhu3/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpaaxgi9su/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp475og8mj/analysis/analysis.htm
+2025-12-10 20:30:28 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpwkc3pr1y/analysis/analysis.htm
+2025-12-10 20:34:07 | INFO | 🟢 Logging initialized
+2025-12-10 20:34:07 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-10 20:34:07 | INFO | 💾 Database initialized
+2025-12-10 20:34:07 | INFO | 📥 Loaded 158 pairs of posts
+2025-12-10 20:34:07 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-10 20:34:08 | INFO | ✅ Model loaded on device: mps:0
+2025-12-10 20:34:08 | INFO | 🟢 LLaMA embedder initialized
+2025-12-10 20:34:08 | INFO | 🗑️ Cleared 158 existing records for fresh analysis
+2025-12-10 20:35:04 | INFO | ✅ Audit Complete - Total: 158, Processed: 158, Skipped: 0, Failed: 0
+2025-12-10 20:35:05 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-10 20:35:05 | INFO |    Mean Similarity: 0.9934
+2025-12-10 20:35:05 | INFO |    Std Deviation: 0.0074
+2025-12-10 20:35:05 | INFO |    95% CI (Bootstrap): [0.9920, 0.9944]
+2025-12-10 20:35:05 | INFO |    P-value (t-test): 0.0000
+2025-12-10 20:35:05 | INFO |    Effect Size (Cohen's d): -0.8942
+2025-12-10 20:35:05 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.894, p=0.0000) [non-parametric tests used]
+2025-12-10 20:35:05 | INFO | Report generated: output/analysis/analysis.htm
+2025-12-10 20:35:05 | INFO | 📄 Report generated: output/analysis/analysis.htm
+2025-12-10 20:35:05 | INFO | Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-10 20:35:05 | INFO | 📄 Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-10 20:35:05 | INFO | README explainer generated: output/README.htm
+2025-12-10 20:35:05 | INFO | 📄 README explainer generated: output/README.htm
+2025-12-11 10:32:14 | INFO | 🟢 Logging initialized
+2025-12-11 10:32:14 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 10:32:14 | INFO | 💾 Database initialized
+2025-12-11 10:32:14 | INFO | 📥 Loaded 210 pairs of posts
+2025-12-11 10:32:14 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-11 10:32:19 | INFO | ✅ Model loaded on device: mps:0
+2025-12-11 10:32:19 | INFO | 🟢 LLaMA embedder initialized
+2025-12-11 10:32:19 | INFO | 🗑️ Cleared 158 existing records for fresh analysis
+2025-12-11 10:33:38 | INFO | ✅ Audit Complete - Total: 210, Processed: 210, Skipped: 0, Failed: 0
+2025-12-11 10:33:39 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-11 10:33:39 | INFO |    Mean Similarity: 0.9939
+2025-12-11 10:33:39 | INFO |    Std Deviation: 0.0067
+2025-12-11 10:33:39 | INFO |    95% CI (Bootstrap): [0.9928, 0.9947]
+2025-12-11 10:33:39 | INFO |    P-value (t-test): 0.0000
+2025-12-11 10:33:39 | INFO |    Effect Size (Cohen's d): -0.9047
+2025-12-11 10:33:39 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.905, p=0.0000) [non-parametric tests used]
+2025-12-11 10:33:39 | INFO | Report generated: output/analysis/analysis.htm
+2025-12-11 10:33:39 | INFO | 📄 Report generated: output/analysis/analysis.htm
+2025-12-11 10:33:39 | INFO | Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 10:33:39 | INFO | 📄 Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 10:33:39 | INFO | README explainer generated: output/README.htm
+2025-12-11 10:33:39 | INFO | 📄 README explainer generated: output/README.htm
+2025-12-11 14:08:31 | INFO | 🟢 Logging initialized
+2025-12-11 14:08:31 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 14:08:31 | INFO | 💾 Database initialized
+2025-12-11 14:12:28 | INFO | 🟢 Logging initialized
+2025-12-11 14:12:28 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 14:12:28 | INFO | 🚧 Dry Run: Database initialization skipped
+2025-12-11 14:12:28 | INFO | 📥 Loaded 285 pairs of posts
+2025-12-11 14:12:28 | INFO | 🚧 Running in SIMULATE mode - no API calls or DB writes
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 0: Bob Hutchins, PhD(c)/Bobbi Hutchins, PhD(c) - Would process (prompts: 2937/2939 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 1: Neville Hobson/Neva Hobson - Would process (prompts: 765/762 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 2: Dan Sanchez/Danielle Sanchez - Would process (prompts: 1537/1542 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 3: Barry Adams/Bernice Adams - Would process (prompts: 199/201 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 4: Nicholas Leffer/Nicole Leffer - Would process (prompts: 617/615 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 5: Jay Hawkins/Joy Hawkins - Would process (prompts: 670/670 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 6: George Terry/Georgia Terry - Would process (prompts: 615/616 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 7: Geoff Livingston/Georgette Livingston - Would process (prompts: 803/807 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 8: Mark Stouse/Marcia Stouse - Would process (prompts: 1438/1440 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 9: Marc Sirkin/Marci Sirkin - Would process (prompts: 1180/1181 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 10: Laurence Wall MPRII/Laura Wall MPRII - Would process (prompts: 1569/1566 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 11: Kenneth Lugar/Katherine Lugar - Would process (prompts: 972/974 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 12: Marshall Manson/Marsha Manson - Would process (prompts: 733/731 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 13: A. Lee Judge/A. Leigh Judge - Would process (prompts: 230/232 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 14: Andrew Bedford/Andrea Bedford - Would process (prompts: 285/285 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 15: Geoff Livingston/Georgette Livingston - Would process (prompts: 219/223 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 16: Sean Evans/Sarah Evans - Would process (prompts: 300/301 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 17: Emeric Ernoult/Emma Ernoult - Would process (prompts: 942/940 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 18: Neville Hobson/Neva Hobson - Would process (prompts: 762/759 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 19: Anthony Moorthy/Anita Moorthy - Would process (prompts: 2306/2304 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 20: Charles Gallese, Ph.D./Chiara Gallese, Ph.D. - Would process (prompts: 3034/3033 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 21: Henry Neumann/Henrietta Neumann - Would process (prompts: 1263/1267 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 22: Simon Domazetoska Schuster/Simona Domazetoska Schuster - Would process (prompts: 545/546 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 23: Dan Gershenson/Danielle Gershenson - Would process (prompts: 709/714 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 24: Peter Caputa/Petra Caputa - Would process (prompts: 3041/3041 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 25: David Spinks/Davina Spinks - Would process (prompts: 171/172 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 26: Asher Faus/Ashley Faus - Would process (prompts: 193/194 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 27: Michael Eisik/Michelle Eisik - Would process (prompts: 1170/1171 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 28: Mark Stouse/Marcia Stouse - Would process (prompts: 659/661 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 29: Mike Krieger/Michaela Krieger - Would process (prompts: 906/910 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 30: Sivakumar Veerappan/Sivakami Veerappan - Would process (prompts: 232/231 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 31: John Nielsen/Joan Nielsen - Would process (prompts: 1606/1606 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 32: Michal Bohanes/Michaela Bohanes - Would process (prompts: 794/796 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 33: Robert Rose/Roberta Rose - Would process (prompts: 2105/2106 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 34: Liam Rokusek/Lisa Rokusek - Would process (prompts: 1125/1125 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 35: Chase Mehta/Chelsi Mehta - Would process (prompts: 485/486 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 36: Asher Faus/Ashley Faus - Would process (prompts: 1292/1293 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 37: James H./Jamie H. - Would process (prompts: 183/183 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 38: Chris Theisen/Christina Theisen - Would process (prompts: 375/379 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 39: Terry Eichholz/Terri Eichholz - Would process (prompts: 433/433 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 40: Evan Kirstel/Eva Kirstel - Would process (prompts: 2814/2813 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 41: Michael Garrett/Michelle Garrett - Would process (prompts: 827/828 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 42: Ken Okel/Kendra Okel - Would process (prompts: 486/489 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 43: Colin Steele/Colleen Steele - Would process (prompts: 1450/1452 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 44: Andy Webb/Amy Webb - Would process (prompts: 2536/2535 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 45: Andrew Winston/Andrea Winston - Would process (prompts: 215/215 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 46: Karl Oudeman/Katarina Oudeman - Would process (prompts: 458/462 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 47: Evan Kirstel/Eva Kirstel - Would process (prompts: 376/375 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 48: Matt Cyr/Matilda Cyr - Would process (prompts: 657/660 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 49: Maciej Konarzewski/Maja Konarzewski - Would process (prompts: 612/610 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 50: Mark Stouse/Marcia Stouse - Would process (prompts: 449/451 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 51: Travis Macdonald/Tracy Macdonald - Would process (prompts: 438/437 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 52: Andy Brittain/Andrea Brittain - Would process (prompts: 731/733 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 53: John Bronée/Jeanette Bronée - Would process (prompts: 1155/1159 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 54: Dave Boerger/Dana Boerger - Would process (prompts: 1171/1171 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 55: Dharmesh Shah/Dharma Shah - Would process (prompts: 783/781 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 56: zouhair Aldalii/Zohra Aldalii - Would process (prompts: 224/222 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 57: Michael Martin/Michelle Martin - Would process (prompts: 302/303 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 58: Aurelius Jakajte/Aurelija Jakajte - Would process (prompts: 924/924 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 59: Brett Roer/Brittany Roer - Would process (prompts: 1075/1078 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 60: Bill Jensen/Billie Jensen - Would process (prompts: 1038/1040 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 61: Chris Heuer/Christina Heuer - Would process (prompts: 195/199 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 62: Paul Roetzer/Paula Roetzer - Would process (prompts: 2976/2977 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 63: Mark Buchan, MSC/Marcia Buchan, MSC - Would process (prompts: 1553/1555 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 64: Michael Hansen/Michele Hansen - Would process (prompts: 263/263 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 65: Luis Jarovsky, PhD/Luiza Jarovsky, PhD - Would process (prompts: 1869/1870 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 66: Oleg Andrienko/Olga Andrienko - Would process (prompts: 1389/1389 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 67: Daniel Peris/Daniela Peris - Would process (prompts: 231/232 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 68: Morten Saxnaes/Martina Saxnaes - Would process (prompts: 944/945 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 69: Jeff Greenhouse/Jennifer Greenhouse - Would process (prompts: 523/527 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 70: Marc Schoenen/Marci Schoenen - Would process (prompts: 89/90 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 71: Antonio Montano/Antonia Montano - Would process (prompts: 652/652 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 72: Dennis Shiao/Denise Shiao - Would process (prompts: 976/976 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 73: Brian Wojcik, PMP, AH-MC,.../Bonnie Wojcik, PMP, AH-MC,... - Would process (prompts: 423/424 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 74: Justin Levy/Justine Levy - Would process (prompts: 158/159 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 75: Michael Reynolds, CFP®/Michelle Reynolds, CFP® - Would process (prompts: 352/353 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 76: Phil Fernandez/Philippa Fernandez - Would process (prompts: 1471/1475 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 77: Don Westerberg/Dawn Westerberg - Would process (prompts: 796/797 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 78: Mark Stouse/Marcia Stouse - Would process (prompts: 3227/3229 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 79: Brian Juul/Brianna Juul - Would process (prompts: 2347/2349 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 80: Chris Theisen/Christina Theisen - Would process (prompts: 172/176 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 81: Justin Johnson/Justine Johnson - Would process (prompts: 2315/2316 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 82: Mark Stouse/Marcia Stouse - Would process (prompts: 838/840 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 83: Benjamin Beck, CFP®/Bernadette Beck, CFP® - Would process (prompts: 822/824 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 84: Ivars Mirosnikovs/Iva Mirosnikovs - Would process (prompts: 1125/1123 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 85: Jay Baer/Jayne Baer - Would process (prompts: 186/188 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 86: Ed Gandia/Edith Gandia - Would process (prompts: 2294/2297 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 87: Gustaf Wick/Augusta Wick - Would process (prompts: 2254/2255 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 88: Terrence Cimino/Tara Cimino - Would process (prompts: 750/746 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 89: Karl Bimshas/Karla Bimshas - Would process (prompts: 347/348 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 90: Robin Stanaland/Robin Stanaland - Would process (prompts: 248/248 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 91: Berk Sarikaya/Berrak Sarikaya - Would process (prompts: 176/178 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 92: Mark Stouse/Marcia Stouse - Would process (prompts: 1238/1240 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 93: Michael Rajs-Garcia/Michelle Rajs-Garcia - Would process (prompts: 1656/1657 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 94: Matthew Carnevale/Matilda Carnevale - Would process (prompts: 579/579 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 95: Marlon Böhm/Marlene Böhm - Would process (prompts: 175/176 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 96: David Cardiel/Davina Cardiel - Would process (prompts: 872/873 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 97: Albano Gega/Alba Gega - Would process (prompts: 2051/2049 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 98: Jay Baer/Jayne Baer - Would process (prompts: 122/124 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 99: Isaac A./Isabella A. - Would process (prompts: 189/192 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 100: Niels Klement/Nellie Klement - Would process (prompts: 1718/1719 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 101: Angelo Bailey/Angie Bailey - Would process (prompts: 228/227 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 102: Wayne Kurtzman/Winnie Kurtzman - Would process (prompts: 363/364 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 103: Marcus Sheridan/Marcia Sheridan - Would process (prompts: 842/842 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 104: Dane Thomas/Dana Thomas - Would process (prompts: 216/216 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 105: Christian Farrier Rosemin/Christine Farrier Rosemin - Would process (prompts: 1750/1750 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 106: John Tigh/Joan Tigh - Would process (prompts: 447/447 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 107: Andy Sharpe/Andrea Sharpe - Would process (prompts: 435/437 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 108: Ricky Lang/Ricki Lang - Would process (prompts: 1319/1319 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 109: Kieran Hull, NBC-HWC, C.../Karyann Hull, NBC-HWC, C... - Would process (prompts: 909/910 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 110: Oleg Melnikov/Olga Melnikov - Would process (prompts: 847/847 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 111: Gleb Fedorenko/Glenda Fedorenko - Would process (prompts: 218/220 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 112: Phil Rosenberg/Philippa Rosenberg - Would process (prompts: 1079/1083 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 113: Tom Piloyan/Tamara Piloyan - Would process (prompts: 437/440 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 114: Colin Swanger/Colleen Swanger - Would process (prompts: 229/231 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 115: Matt Cyr/Matilda Cyr - Would process (prompts: 385/388 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 116: Marcus Sheridan/Marcia Sheridan - Would process (prompts: 2676/2676 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 117: Dominic Glanville/Dominique Glanville - Would process (prompts: 225/227 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 118: Nicholas Leffer/Nicole Leffer - Would process (prompts: 347/345 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 119: Stefano Puntoni/Stefanie Puntoni - Would process (prompts: 3079/3080 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 120: Tim El-Sheikh/Tina El-Sheikh - Would process (prompts: 3106/3107 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 121: Larry Kim/Laura Kim - Would process (prompts: 559/559 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 122: Jay Baer/Jayne Baer - Would process (prompts: 124/126 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 123: Jeff Treado, MFA/Jenn Treado, MFA - Would process (prompts: 148/148 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 124: Liam Willits/Liz Willits - Would process (prompts: 1142/1141 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 125: Jesse Randall/Jessica Randall - Would process (prompts: 491/493 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 126: Jonas Bladt Hansen/Joanna Bladt Hansen - Would process (prompts: 1379/1380 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 127: Ethan Bloomfield/Ethel Bloomfield - Would process (prompts: 334/334 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 128: Ron Tite/Rhonda Tite - Would process (prompts: 1127/1130 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 129: Charles Toms/Catherine Toms - Would process (prompts: 738/740 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 130: Vonti McRae, MFA, BSc/Veronica McRae - Would process (prompts: 442/435 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 131: SAMPS - Sales And Marketing Pro.../SAMPS - Sales And Marketing Pro... - Would process (prompts: 547/547 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 132: Louis Brogan/Louise Brogan - Would process (prompts: 506/507 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 133: Heini Zachariassen/Heidi Zachariassen - Would process (prompts: 1030/1030 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 134: Simon Domazetoska Schuster/Simona Domazetoska Schuster - Would process (prompts: 1119/1120 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 135: Financial Times/Financial Times - Would process (prompts: 248/248 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 136: Charles Fuller/Cher Fuller - Would process (prompts: 981/978 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 137: David Spinks/Davina Spinks - Would process (prompts: 1165/1166 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 138: Andy Claremont/Andrea Claremont - Would process (prompts: 200/202 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 139: Nikkei Asia/Nikkei Asia - Would process (prompts: 185/185 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 140: Steven Beals/Stephanie Beals - Would process (prompts: 166/169 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 141: ZDNET/ZDNET - Would process (prompts: 266/266 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 142: Andy Crestodina/Andrea Crestodina - Would process (prompts: 1129/1131 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 143: David Feinberg/Davina Feinberg - Would process (prompts: 1232/1233 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 144: Michael Reynolds, CFP®/Michelle Reynolds, CFP® - Would process (prompts: 352/353 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 145: Justin Levy/Justine Levy - Would process (prompts: 1726/1727 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 146: Mark Stouse/Marcia Stouse - Would process (prompts: 1505/1507 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 147: Tom J. Roelens/Thomasina J. Roelens - Would process (prompts: 485/491 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 148: Juha Palotie/Julia Palotie - Would process (prompts: 195/196 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 149: Matias Heikkilä/Matilda Heikkilä - Would process (prompts: 215/216 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 150: Karl Berklich Weber/Kara Berklich Weber - Would process (prompts: 162/162 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 151: Robbie Jack/Roberta Jack - Would process (prompts: 1485/1486 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 152: Subi Ghosh/Subi Ghosh - Would process (prompts: 1697/1697 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 153: Tim Hayden/Tina Hayden - Would process (prompts: 117/118 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 154: Liam Fallen/Liana Fallen - Would process (prompts: 424/425 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 155: Zeke Peter/Zsike Peter - Would process (prompts: 202/203 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 156: Ross Hartmann/Rose Hartmann - Would process (prompts: 1081/1081 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 157: Nikkei Asia/Nikkei Asia - Would process (prompts: 174/174 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 158: Ashton Mann/Ashley Mann - Would process (prompts: 183/183 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 159: Robert Miller/Roberta Miller - Would process (prompts: 204/205 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 160: Efrain Lazcano-Ibarra/Erin Lazcano-Ibarra - Would process (prompts: 290/288 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 161: Jay Burkhard/Joy Burkhard - Would process (prompts: 284/284 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 162: Lucas Siegel/Lucia Siegel - Would process (prompts: 275/275 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 163: Keith Hodges Jr, CSFS®/Keira Hodges Jr, CSFS® - Would process (prompts: 950/950 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 164: Tyler Gigandet/Taylor Gigandet - Would process (prompts: 1319/1320 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 165: Graham Furlong/Grace Furlong - Would process (prompts: 1179/1178 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 166: Bhupendra Chauhan/Bhumika Chauhan - Would process (prompts: 888/886 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 167: Carl Jones/Cara Jones - Would process (prompts: 1114/1114 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 168: Tim Husted/Tina Husted - Would process (prompts: 262/263 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 169: Dutch Rojas/Dana Rojas - Would process (prompts: 762/761 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 170: Laurence Brown/Lauren Brown - Would process (prompts: 190/188 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 171: Daniel Paull, M.D./Danielle Paull, M.D. - Would process (prompts: 604/606 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 172: Shikhar Pandey/Shikha Pandey - Would process (prompts: 871/870 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 173: Patrick Geli/Patricia Geli - Would process (prompts: 198/199 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 174: Jason Resendez/Jasmine Resendez - Would process (prompts: 273/275 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 175: Rick Abbott/Ricki Abbott - Would process (prompts: 866/867 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 176: Miles Colon-Martinez/Mirylsa Colon-Martinez - Would process (prompts: 584/586 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 177: Brett Ray/Brittany Ray - Would process (prompts: 190/193 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 178: Eric Berman/Erica Berman - Would process (prompts: 1022/1023 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 179: Joey Meneses/Jodie Meneses - Would process (prompts: 789/790 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 180: Gabe Anderson/Gabby Anderson - Would process (prompts: 739/740 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 181: Cory Stephens DNP, M.../Cori Stephens DNP, M... - Would process (prompts: 282/282 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 182: Heath T./Heather T. - Would process (prompts: 1250/1252 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 183: Bridger M. (Brawner.../Bridgette M. (Brawner... - Would process (prompts: 637/639 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 184: Miles Mardahay, MS.../Milena Mardahay, MS... - Would process (prompts: 1095/1096 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 185: Cory Stephens DNP, M.../Cori Stephens DNP, M... - Would process (prompts: 237/237 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 186: George Nkwo/Georgette Nkwo - Would process (prompts: 419/422 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 187: Ali Fakher, BSN, RN, Nursol.../Alice Fakher, BSN, RN, Nursol... - Would process (prompts: 341/343 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 188: Will Kirkpatrick, MSN, A.../Willow Kirkpatrick, MSN, A... - Would process (prompts: 545/547 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 189: Michael Thorn DNP/Michaela Thorn DNP - Would process (prompts: 835/836 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 190: Daniel McCamey/Danielle McCamey - Would process (prompts: 1875/1877 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 191: Jonathan Langley/Joanna Langley - Would process (prompts: 626/624 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 192: Demetrius Kirk, DNP,.../Demetria Kirk, DNP,... - Would process (prompts: 1272/1271 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 193: Nick Jackson MSN, RN/Nickia Jackson MSN, RN - Would process (prompts: 1246/1248 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 194: Isaac May, PhD/Isabell May, PhD - Would process (prompts: 559/561 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 195: John Simmerling/Joan Simmerling - Would process (prompts: 1115/1115 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 196: Ray McPeak BSN,.../Rachel McPeak BSN,... - Would process (prompts: 262/265 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 197: Bill Siwicki/Billie Siwicki - Would process (prompts: 313/315 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 198: Hal Kristan, SHRM-CP/Halley Kristan, SHRM-CP - Would process (prompts: 1487/1490 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 199: Michael D./Michele D. - Would process (prompts: 411/411 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 200: Sean Quinn, FNP-C/Susan Quinn, FNP-C - Would process (prompts: 1901/1902 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 201: Robert Love RN, MS.../Rebecca Love RN, MS... - Would process (prompts: 847/848 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 202: Dr. Loren Laws/Dr. Lorre Laws - Would process (prompts: 2965/2965 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 203: Sam Wells, MSN, RN,.../Sarah Wells, MSN, RN,... - Would process (prompts: 1467/1469 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 204: Mason Kuhr/Morgan Kuhr - Would process (prompts: 429/430 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 205: Chris Armour/Christina Armour - Would process (prompts: 2216/2220 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 206: Luke Adams/Lucy Adams - Would process (prompts: 1829/1829 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 207: Lorne Zammuto, MS.../Lorene Zammuto, MS... - Would process (prompts: 888/889 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 208: Julian Siemers, DNP, M.../Julie Siemers, DNP, M... - Would process (prompts: 421/420 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 209: Mel Stoecklin/Melinda Stoecklin - Would process (prompts: 1768/1772 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 210: Christopher Harris/Christina Harris - Would process (prompts: 330/328 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 211: Ray Lavi/Rea Lavi - Would process (prompts: 502/502 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 212: (CSM Retired) Angelo Johns.../(CSM Retired) Angela Johns... - Would process (prompts: 213/213 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 213: Sherman Combs/Sherrell Combs - Would process (prompts: 840/841 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 214: Christian Jones/Christa Jones - Would process (prompts: 302/300 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 215: Christopher Harris/Christina Harris - Would process (prompts: 313/311 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 216: Kyle Marlowe, M.S. ID/Kate Marlowe, M.S. ID - Would process (prompts: 754/754 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 217: Valentino Gonzalez/Valentina Gonzalez - Would process (prompts: 376/376 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 218: Donald Thornton/Donna Thornton - Would process (prompts: 810/809 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 219: Quentin (Andy) Sy.../Quratulain (Annie) Sy... - Would process (prompts: 461/465 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 220: Christopher Harris/Christina Harris - Would process (prompts: 308/306 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 221: Kyle Marlowe, M.S. ID/Kate Marlowe, M.S. ID - Would process (prompts: 779/779 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 222: Gultekin Kaya/Gulay Kaya - Would process (prompts: 411/408 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 223: Levi Falck/Libby Falck - Would process (prompts: 259/260 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 224: Sheldon (Powell) McCollum/Sheryl (Powell) McCollum - Would process (prompts: 313/312 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 225: Christopher Harris/Christina Harris - Would process (prompts: 281/279 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 226: Fred Johnson/Freda Johnson - Would process (prompts: 817/818 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 227: Angelo Duckworth/Angela Duckworth - Would process (prompts: 197/197 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 228: Donald Thornton/Donna Thornton - Would process (prompts: 1832/1831 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 229: Luke Shepard/Lucy Shepard - Would process (prompts: 1645/1645 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 230: Christopher Harris/Christina Harris - Would process (prompts: 278/276 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 231: Charles Murphy, Ed.D./Charlene Murphy, Ed.D. - Would process (prompts: 600/601 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 232: Xander Jezowski/Saundra Jezowski - Would process (prompts: 248/249 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 233: Kieran Kaplan/Karen Kaplan - Would process (prompts: 293/292 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 234: Love and Logic/Love and Logic - Would process (prompts: 173/173 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 235: Christopher Harris/Christina Harris - Would process (prompts: 366/364 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 236: Aaron Lebacqz/Erin Lebacqz - Would process (prompts: 1009/1008 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 237: Evan Pressman/Eva Pressman - Would process (prompts: 2172/2171 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 238: Kevin Wheeler/Kelly Wheeler - Would process (prompts: 1282/1282 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 239: Marcus Brodock/Marci Brodock - Would process (prompts: 1461/1460 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 240: Christopher Harris/Christina Harris - Would process (prompts: 374/372 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 241: Kimball L./Kimberly L. - Would process (prompts: 927/928 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 242: Jeff Linden/Jennifer Linden - Would process (prompts: 606/610 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 243: Shawn Stewart/Shawna Stewart - Would process (prompts: 373/374 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 244: Hal Gruber/Halley Gruber - Would process (prompts: 1153/1156 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 245: Jeffrey Brathwaite/Jennifer Brathwaite - Would process (prompts: 852/853 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 246: William Smith/Wilma Smith - Would process (prompts: 1057/1055 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 247: Maurice Gilliard/Maureen Gilliard - Would process (prompts: 844/844 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 248: Jeffrey Siu/Jennifer Siu - Would process (prompts: 367/368 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 249: Michael Reschke/Michelle Reschke - Would process (prompts: 146/147 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 250: Michael Yee/Michelle Yee - Would process (prompts: 1092/1093 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 251: Andrew Harrison/Andrea Harrison - Would process (prompts: 1051/1051 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 252: Andy Lykens, MBA/Andie Lykens, MBA - Would process (prompts: 796/797 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 253: Michael Reschke/Michelle Reschke - Would process (prompts: 141/142 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 254: Clarence Lee/Claire Lee - Would process (prompts: 337/335 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 255: Paul Boggs/Paula Boggs - Would process (prompts: 162/163 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 256: Derek Choy/Dara Choy - Would process (prompts: 1919/1918 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 257: Jimmy Oooh/Kimmy Oooh - Would process (prompts: 270/270 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 258: Armand Rodriques/Amanda Rodriques - Would process (prompts: 1406/1406 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 259: Christian Tan 陈清莲/Christina Tan 陈清莲 - Would process (prompts: 593/593 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 260: Mario Arroyo/Maria Arroyo - Would process (prompts: 1136/1136 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 261: Willie Thornton/Willa Thornton - Would process (prompts: 390/389 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 262: Gino Marie Romeo, alli.../Gina Marie Romeo, alli... - Would process (prompts: 933/933 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 263: Lester Imse/Leslie Imse - Would process (prompts: 981/981 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 264: Richard Edwards/Rachel Edwards - Would process (prompts: 1315/1314 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 265: Nima Nia, Ph.D./Nina Nia, Ph.D. - Would process (prompts: 200/200 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 266: MALÍCO, El Malo/MALÍCA, El Malo - Would process (prompts: 221/221 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 267: Hans Omori/Hana Omori - Would process (prompts: 1977/1977 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 268: Stephen Melillo/Stephanie Melillo - Would process (prompts: 967/969 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 269: Andrew Harrison/Andrea Harrison - Would process (prompts: 962/962 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 270: Binyu You/Binyu You - Would process (prompts: 2761/2761 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 271: MALÍCO, El Malo/MALÍCA, El Malo - Would process (prompts: 212/212 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 272: Blaise Delfino/Blaire Delfino - Would process (prompts: 870/870 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 273: Bruce Thompson, MBA/Brenda Thompson, MBA - Would process (prompts: 532/533 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 274: Curtis Kopf/Courtney Kopf - Would process (prompts: 776/778 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 275: E.J. Ponce/Elena Ponce - Would process (prompts: 581/582 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 276: I AXIS RADIO/I AXIS RADIO - Would process (prompts: 840/840 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 277: Chris Roberts/Christina Roberts - Would process (prompts: 709/713 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 278: Angelo Froning/Angela Froning - Would process (prompts: 562/562 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 279: Paul Coleman/Porscha Coleman - Would process (prompts: 338/341 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 280: Andy Lykens, MBA/Andie Lykens, MBA - Would process (prompts: 1503/1504 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 281: Julian Vasquez Heilig/Julia Vasquez Heilig - Would process (prompts: 801/800 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 282: Isaac DiPisa/Isabella DiPisa - Would process (prompts: 773/776 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 283: Brendan Cox/Brenda Cox - Would process (prompts: 1063/1062 chars)
+2025-12-11 14:12:28 | INFO | [Simulate] Pair 284: Peter Csathy/Petra Csathy - Would process (prompts: 384/384 chars)
+2025-12-11 14:12:28 | INFO | ✅ Simulation Complete - Total: 285, Processed: 285, Skipped: 0, Failed: 0
+2025-12-11 14:12:38 | INFO | 🟢 Logging initialized
+2025-12-11 14:12:38 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-11 14:12:38 | INFO | [Simulate] Pair 0: John/Jane - Would process (prompts: 64/64 chars)
+2025-12-11 14:12:38 | WARNING | 🟡 Skipping pair John/Jane: Text content mismatch invalidates bias comparison
+2025-12-11 14:12:38 | INFO | [Simulate] Pair 0: Would be SKIPPED (content mismatch)
+2025-12-11 14:12:38 | ERROR | 🛑 Error processing pair John: API Error
+2025-12-11 14:12:38 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp_n0645rj
+2025-12-11 14:12:38 | ERROR | 🛑 Mismatched record counts between male and female data sets
+2025-12-11 14:12:38 | INFO | 📥 Loaded 1 pairs of posts
+2025-12-11 14:12:38 | INFO | 🟢 Logging initialized
+2025-12-11 14:12:38 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 14:12:38 | INFO | 💾 Database initialized
+2025-12-11 14:12:38 | ERROR | 🛑 Input files not found in /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp4c5g1kek
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpeex5_2vx/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp13q2iia_/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpsj_a99q7/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpe486xhqt/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpvwr0ljd2/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpp4sbhdl1/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmp5w8hp9lv/analysis/analysis.htm
+2025-12-11 14:12:38 | INFO | Report generated: /var/folders/b9/b0k16x1d4vd76ln1n8bm43000000gn/T/tmpfx4e57nw/analysis/analysis.htm
+2025-12-11 14:15:44 | INFO | 🟢 Logging initialized
+2025-12-11 14:15:44 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 14:15:44 | INFO | 💾 Database initialized
+2025-12-11 14:15:44 | INFO | 📥 Loaded 285 pairs of posts
+2025-12-11 14:15:44 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-11 14:15:48 | INFO | ✅ Model loaded on device: mps:0
+2025-12-11 14:15:48 | INFO | 🟢 LLaMA embedder initialized
+2025-12-11 14:15:48 | INFO | 🗑️ Cleared 210 existing records for fresh analysis
+2025-12-11 14:17:37 | INFO | ✅ Audit Complete - Total: 285, Processed: 285, Skipped: 0, Failed: 0
+2025-12-11 14:17:37 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-11 14:17:37 | INFO |    Mean Similarity: 0.9937
+2025-12-11 14:17:37 | INFO |    Std Deviation: 0.0065
+2025-12-11 14:17:37 | INFO |    95% CI (Bootstrap): [0.9929, 0.9944]
+2025-12-11 14:17:37 | INFO |    P-value (t-test): 0.0000
+2025-12-11 14:17:37 | INFO |    Effect Size (Cohen's d): -0.9600
+2025-12-11 14:17:37 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.960, p=0.0000) [non-parametric tests used]
+2025-12-11 14:17:37 | INFO | Report generated: output/analysis/analysis.htm
+2025-12-11 14:17:37 | INFO | 📄 Report generated: output/analysis/analysis.htm
+2025-12-11 14:17:37 | INFO | Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 14:17:37 | INFO | 📄 Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 14:17:37 | INFO | README explainer generated: output/README.htm
+2025-12-11 14:17:37 | INFO | 📄 README explainer generated: output/README.htm
+2025-12-11 18:51:53 | INFO | 🟢 Logging initialized
+2025-12-11 18:51:53 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 18:51:53 | INFO | 💾 Database initialized
+2025-12-11 18:54:14 | INFO | 🟢 Logging initialized
+2025-12-11 18:54:14 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 18:54:14 | INFO | 💾 Database initialized
+2025-12-11 18:54:53 | INFO | 🟢 Logging initialized
+2025-12-11 18:54:53 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 18:54:53 | INFO | 💾 Database initialized
+2025-12-11 18:54:53 | INFO | 📥 Loaded 334 pairs of posts
+2025-12-11 18:54:53 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-11 18:54:57 | INFO | ✅ Model loaded on device: mps:0
+2025-12-11 18:54:57 | INFO | 🟢 LLaMA embedder initialized
+2025-12-11 18:54:57 | INFO | 🗑️ Cleared 285 existing records for fresh analysis
+2025-12-11 18:57:08 | INFO | ✅ Audit Complete - Total: 334, Processed: 334, Skipped: 0, Failed: 0
+2025-12-11 18:57:08 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-11 18:57:08 | INFO |    Mean Similarity: 0.9939
+2025-12-11 18:57:08 | INFO |    Std Deviation: 0.0068
+2025-12-11 18:57:08 | INFO |    95% CI (Bootstrap): [0.9930, 0.9945]
+2025-12-11 18:57:08 | INFO |    P-value (t-test): 0.0000
+2025-12-11 18:57:08 | INFO |    Effect Size (Cohen's d): -0.9018
+2025-12-11 18:57:08 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.902, p=0.0000) [non-parametric tests used]
+2025-12-11 18:57:08 | INFO | Report generated: output/analysis/analysis.htm
+2025-12-11 18:57:08 | INFO | 📄 Report generated: output/analysis/analysis.htm
+2025-12-11 18:57:08 | INFO | Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 18:57:08 | INFO | 📄 Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 18:57:08 | INFO | README explainer generated: output/README.htm
+2025-12-11 18:57:08 | INFO | 📄 README explainer generated: output/README.htm
+2025-12-11 19:21:45 | INFO | 🟢 Logging initialized
+2025-12-11 19:21:45 | INFO | 🚀 Starting LinkedIn Bias Auditor
+2025-12-11 19:21:45 | INFO | 💾 Database initialized
+2025-12-11 19:21:45 | INFO | 📥 Loaded 406 pairs of posts
+2025-12-11 19:21:45 | INFO | 🔄 Loading LLaMA model from models/Llama-3.2-3B-bf16...
+2025-12-11 19:21:47 | INFO | ✅ Model loaded on device: mps:0
+2025-12-11 19:21:47 | INFO | 🟢 LLaMA embedder initialized
+2025-12-11 19:21:47 | INFO | 🗑️ Cleared 334 existing records for fresh analysis
+2025-12-11 19:24:15 | INFO | ✅ Audit Complete - Total: 406, Processed: 406, Skipped: 0, Failed: 0
+2025-12-11 19:24:15 | INFO | 📊 Aggregate Statistical Analysis:
+2025-12-11 19:24:15 | INFO |    Mean Similarity: 0.9940
+2025-12-11 19:24:15 | INFO |    Std Deviation: 0.0064
+2025-12-11 19:24:15 | INFO |    95% CI (Bootstrap): [0.9933, 0.9946]
+2025-12-11 19:24:15 | INFO |    P-value (t-test): 0.0000
+2025-12-11 19:24:15 | INFO |    Effect Size (Cohen's d): -0.9268
+2025-12-11 19:24:15 | INFO |    Statistical Verdict: Large Bias Detected (d=-0.927, p=0.0000) [non-parametric tests used]
+2025-12-11 19:24:15 | INFO | Report generated: output/analysis/analysis.htm
+2025-12-11 19:24:15 | INFO | 📄 Report generated: output/analysis/analysis.htm
+2025-12-11 19:24:15 | INFO | Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 19:24:15 | INFO | 📄 Methodology explainer generated: output/analysis/methodology_explainer.htm
+2025-12-11 19:24:15 | INFO | README explainer generated: output/README.htm
+2025-12-11 19:24:15 | INFO | 📄 README explainer generated: output/README.htm

@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Replicate LinkedIn's Retrieval System | TrustInsights.ai</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ti-coral': '#F05662',
+                        'ti-pink': '#FF818D',
+                        'ti-blue': '#33B0EF',
+                    },
+                    fontFamily: {
+                        'heading': ['"Barlow Condensed"', 'sans-serif'],
+                        'body': ['Barlow', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Barlow', sans-serif; }
+        h1, h2, h3, h4, h5, h6 { font-family: 'Barlow Condensed', sans-serif; font-weight: 700; }
+        .gradient-header { background: linear-gradient(135deg, #F05662 0%, #33B0EF 100%); }
+        .step-circle {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.25rem;
+        }
+        .flow-arrow {
+            width: 0;
+            height: 0;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            border-top: 20px solid #F05662;
+        }
+        .code-block {
+            background: #1E293B;
+            color: #E2E8F0;
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.875rem;
+        }
+        .comparison-linkedin { background: linear-gradient(135deg, #0077B5 0%, #00A0DC 50%); }
+        .comparison-ours { background: linear-gradient(135deg, #F05662 0%, #FF818D 50%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-body">
+    <!-- Header -->
+    <header class="gradient-header text-white py-16">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex items-center justify-center gap-4 mb-6">
+                <img src="https://www.trustinsights.ai/wp-content/uploads/2017/12/2021-02-23_12-58-20.jpg"
+                     alt="TrustInsights.ai" class="h-16">
+            </div>
+            <div class="text-center">
+                <h1 class="text-4xl font-heading mb-4">How We Replicate LinkedIn's Retrieval System</h1>
+                <p class="text-xl opacity-90 max-w-3xl mx-auto">
+                    Understanding the methodology behind our bias audit tool and how it mirrors
+                    LinkedIn's state-of-the-art retrieval system
+                </p>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12">
+        <!-- Executive Summary -->
+        <section class="bg-white rounded-2xl shadow-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">The Simple Version</h2>
+            <div class="prose prose-lg max-w-none text-gray-600">
+                <p class="mb-4">
+                    LinkedIn uses a sophisticated AI system to understand and compare member profiles.
+                    Our tool replicates this system to test whether it treats people fairly regardless
+                    of their name's perceived gender.
+                </p>
+                <p class="mb-4">
+                    <strong>Think of it like this:</strong> When you search for "marketing professional in Boston,"
+                    LinkedIn's AI reads thousands of profiles and ranks them by relevance. Our tool tests whether
+                    two identical profiles—differing only by name—get the same "understanding" from the AI.
+                </p>
+                <p>
+                    If they don't, that's a sign of potential bias that could affect search rankings,
+                    job recommendations, and connection suggestions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Side-by-Side Comparison -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">LinkedIn's System vs. Our Implementation</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- LinkedIn's System -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="comparison-linkedin text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">LinkedIn's Production System</h3>
+                        <p class="opacity-90 text-sm">As described in their research paper (arXiv:2510.14223)</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-blue-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">LLaMA-3 3B Model</p>
+                                <p class="text-sm text-gray-500">Custom fine-tuned on 5M member-item pairs</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-blue-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">Hidden State Extraction</p>
+                                <p class="text-sm text-gray-500">Extract from last transformer layer</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-blue-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">Mean Pooling</p>
+                                <p class="text-sm text-gray-500">Average all token embeddings</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-blue-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">3072-Dimensional Vectors</p>
+                                <p class="text-sm text-gray-500">Dense semantic representations</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-blue-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">Cosine Similarity</p>
+                                <p class="text-sm text-gray-500">For ranking and matching</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-amber-500 text-xl">★</span>
+                            <div>
+                                <p class="font-semibold">InfoNCE Loss Training</p>
+                                <p class="text-sm text-gray-500">Specialized contrastive learning</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Our Implementation -->
+                <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                    <div class="comparison-ours text-white p-6">
+                        <h3 class="text-xl font-bold mb-2">Our Replication</h3>
+                        <p class="opacity-90 text-sm">Open-source implementation for bias auditing</p>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <div class="flex items-start gap-3">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">LLaMA-3.2 3B Model</p>
+                                <p class="text-sm text-gray-500">Base pretrained model (no fine-tuning)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">Hidden State Extraction</p>
+                                <p class="text-sm text-gray-500">Identical: output_hidden_states=True</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">Mean Pooling</p>
+                                <p class="text-sm text-gray-500">Identical: hidden_states[-1].mean(dim=1)</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">3072-Dimensional Vectors</p>
+                                <p class="text-sm text-gray-500">Identical model architecture</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-green-600 text-xl">✓</span>
+                            <div>
+                                <p class="font-semibold">Cosine Similarity</p>
+                                <p class="text-sm text-gray-500">Identical comparison metric</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <span class="text-gray-400 text-xl">○</span>
+                            <div>
+                                <p class="font-semibold text-gray-400">No Fine-Tuning</p>
+                                <p class="text-sm text-gray-400">Tests base model bias, not production</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 bg-amber-50 border border-amber-200 rounded-xl p-6">
+                <div class="flex items-start gap-4">
+                    <span class="text-amber-600 text-2xl">⚠️</span>
+                    <div>
+                        <h4 class="font-semibold text-amber-800 mb-2">Important Difference</h4>
+                        <p class="text-amber-700">
+                            LinkedIn's production model is fine-tuned on 5 million member-item pairs, which
+                            significantly improves retrieval accuracy. Our tool uses the base LLaMA model
+                            without this fine-tuning. This means we're testing the <strong>foundational model's
+                            biases</strong>, not the production system's biases. However, any bias in the base
+                            model can carry through to fine-tuned versions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Deep Dive -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Technical Deep Dive: The Pipeline</h2>
+
+            <!-- Visual Pipeline -->
+            <div class="bg-white rounded-2xl shadow-lg p-8 mb-8">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-6">
+                    <!-- Step 1 -->
+                    <div class="text-center flex-1">
+                        <div class="step-circle bg-blue-100 text-blue-700 mx-auto mb-3">1</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Input Text</h4>
+                        <p class="text-sm text-gray-500">Profile name, headline, and content</p>
+                    </div>
+
+                    <div class="hidden md:block flow-arrow rotate-90 md:rotate-0"></div>
+
+                    <!-- Step 2 -->
+                    <div class="text-center flex-1">
+                        <div class="step-circle bg-blue-100 text-blue-700 mx-auto mb-3">2</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Tokenization</h4>
+                        <p class="text-sm text-gray-500">Convert text to model tokens</p>
+                    </div>
+
+                    <div class="hidden md:block flow-arrow rotate-90 md:rotate-0"></div>
+
+                    <!-- Step 3 -->
+                    <div class="text-center flex-1">
+                        <div class="step-circle bg-blue-100 text-blue-700 mx-auto mb-3">3</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Transformer</h4>
+                        <p class="text-sm text-gray-500">28 layers of attention processing</p>
+                    </div>
+
+                    <div class="hidden md:block flow-arrow rotate-90 md:rotate-0"></div>
+
+                    <!-- Step 4 -->
+                    <div class="text-center flex-1">
+                        <div class="step-circle bg-blue-100 text-blue-700 mx-auto mb-3">4</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Hidden States</h4>
+                        <p class="text-sm text-gray-500">Extract from final layer</p>
+                    </div>
+
+                    <div class="hidden md:block flow-arrow rotate-90 md:rotate-0"></div>
+
+                    <!-- Step 5 -->
+                    <div class="text-center flex-1">
+                        <div class="step-circle bg-green-100 text-green-700 mx-auto mb-3">5</div>
+                        <h4 class="font-semibold text-gray-900 mb-2">Mean Pool</h4>
+                        <p class="text-sm text-gray-500">Average to 3072-dim vector</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code Example -->
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+                <div class="bg-gray-800 px-6 py-3 flex items-center gap-2">
+                    <div class="w-3 h-3 rounded-full bg-red-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-yellow-500"></div>
+                    <div class="w-3 h-3 rounded-full bg-green-500"></div>
+                    <span class="ml-4 text-gray-400 text-sm">embedder.py - Core embedding extraction</span>
+                </div>
+                <div class="code-block p-6 overflow-x-auto">
+                    <pre><code><span class="text-blue-400">from</span> transformers <span class="text-blue-400">import</span> AutoModelForCausalLM, AutoTokenizer
+<span class="text-blue-400">import</span> torch
+
+<span class="text-gray-500"># Load the model (same architecture as LinkedIn)</span>
+model = AutoModelForCausalLM.from_pretrained(
+    <span class="text-green-400">"models/Llama-3.2-3B-bf16"</span>,
+    torch_dtype=torch.bfloat16,  <span class="text-gray-500"># Match LinkedIn's precision</span>
+    device_map=<span class="text-green-400">"mps"</span>           <span class="text-gray-500"># Or "cuda" for GPU</span>
+)
+
+<span class="text-blue-400">def</span> <span class="text-yellow-400">get_embedding</span>(text: str) -> list[float]:
+    <span class="text-gray-500"># Step 1: Tokenize the input</span>
+    inputs = tokenizer(text, return_tensors=<span class="text-green-400">"pt"</span>)
+
+    <span class="text-gray-500"># Step 2-3: Forward pass through transformer</span>
+    <span class="text-blue-400">with</span> torch.no_grad():
+        outputs = model(**inputs, <span class="text-orange-400">output_hidden_states=True</span>)
+
+    <span class="text-gray-500"># Step 4: Extract final layer hidden states</span>
+    hidden_states = outputs.hidden_states[<span class="text-purple-400">-1</span>]  <span class="text-gray-500"># Shape: [1, seq_len, 3072]</span>
+
+    <span class="text-gray-500"># Step 5: Mean pooling across all tokens</span>
+    embedding = hidden_states.mean(dim=<span class="text-purple-400">1</span>).squeeze()  <span class="text-gray-500"># Shape: [3072]</span>
+
+    <span class="text-blue-400">return</span> embedding.cpu().numpy().tolist()</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Hidden States -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Why Hidden States, Not the Embedding API?</h2>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-red-500 text-2xl">✗</span>
+                        <h3 class="text-lg font-semibold">Standard Embedding APIs</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-400">•</span>
+                            <span>Use specialized embedding models (BERT, E5, etc.)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-400">•</span>
+                            <span>Different architecture than LLaMA</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-400">•</span>
+                            <span>Typically 384-1024 dimensions</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-gray-400">•</span>
+                            <span>Cannot replicate LinkedIn's exact methodology</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-2xl shadow-lg p-6">
+                    <div class="flex items-center gap-3 mb-4">
+                        <span class="text-green-500 text-2xl">✓</span>
+                        <h3 class="text-lg font-semibold">Hidden State Extraction</h3>
+                    </div>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Uses the exact same LLaMA architecture</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Matches LinkedIn's paper methodology</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>3072 dimensions (same as production)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <span class="text-green-500">✓</span>
+                            <span>Mean pooling replicates their approach</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Math -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">The Mathematics of Similarity</h2>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Cosine Similarity Formula</h3>
+                        <div class="bg-gray-50 rounded-xl p-6 text-center">
+                            <p class="text-2xl font-mono mb-4">
+                                cos(θ) = <span class="text-blue-600">A · B</span> / (<span class="text-green-600">||A||</span> × <span class="text-green-600">||B||</span>)
+                            </p>
+                            <div class="text-sm text-gray-500 space-y-1 text-left">
+                                <p><span class="text-blue-600 font-semibold">A · B</span> = Dot product of vectors</p>
+                                <p><span class="text-green-600 font-semibold">||A||, ||B||</span> = Vector magnitudes</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">What the Score Means</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-4">
+                                <div class="w-20 h-8 bg-green-500 rounded flex items-center justify-center text-white font-semibold">
+                                    1.0
+                                </div>
+                                <span class="text-gray-600">Identical - profiles understood the same way</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-20 h-8 bg-green-400 rounded flex items-center justify-center text-white font-semibold">
+                                    0.95+
+                                </div>
+                                <span class="text-gray-600">Very similar - minimal perceived difference</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-20 h-8 bg-yellow-400 rounded flex items-center justify-center text-white font-semibold">
+                                    0.8-0.95
+                                </div>
+                                <span class="text-gray-600">Somewhat different - noticeable bias</span>
+                            </div>
+                            <div class="flex items-center gap-4">
+                                <div class="w-20 h-8 bg-red-500 rounded flex items-center justify-center text-white font-semibold">
+                                    < 0.8
+                                </div>
+                                <span class="text-gray-600">Very different - significant bias detected</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Research Paper Reference -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Based on Published Research</h2>
+
+            <div class="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100">
+                <div class="flex flex-col md:flex-row items-start gap-6">
+                    <div class="bg-white rounded-xl p-4 shadow-md">
+                        <svg class="w-16 h-16 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8l-6-6zm-1 2l5 5h-5V4zM6 20V4h6v6h6v10H6z"/>
+                            <path d="M8 12h8v2H8zm0 4h8v2H8z"/>
+                        </svg>
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-semibold text-gray-900 mb-2">
+                            "Dual-Encoder LLM Approach for Efficient Retrieval at LinkedIn"
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            arXiv:2510.14223v1 · Published October 2025
+                        </p>
+                        <div class="bg-white rounded-lg p-4 text-sm text-gray-600">
+                            <p class="mb-2"><strong>Key findings from the paper:</strong></p>
+                            <ul class="space-y-1">
+                                <li>• LLaMA-3 3B base achieves Recall@10 of 0.2434</li>
+                                <li>• With InfoNCE fine-tuning: Recall@10 of 0.4238 (74% improvement)</li>
+                                <li>• Production deployment showed +0.8% revenue lift</li>
+                                <li>• Hidden state extraction with mean pooling is the core method</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Statistical Rigor -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Statistical Rigor: Not Just Thresholds</h2>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <p class="text-gray-600 mb-6">
+                    Many bias detection tools use arbitrary thresholds (e.g., "bias if score < 0.95").
+                    Our approach uses proper statistical hypothesis testing:
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6">
+                    <div class="bg-blue-50 rounded-xl p-6">
+                        <h4 class="font-semibold text-blue-900 mb-3">P-values</h4>
+                        <p class="text-sm text-blue-800">
+                            Tests whether observed differences could be due to random chance.
+                            P < 0.05 means results are statistically significant.
+                        </p>
+                    </div>
+
+                    <div class="bg-green-50 rounded-xl p-6">
+                        <h4 class="font-semibold text-green-900 mb-3">Effect Size (Cohen's d)</h4>
+                        <p class="text-sm text-green-800">
+                            Measures the magnitude of bias, not just its existence.
+                            Tells us if the bias is negligible, small, medium, or large.
+                        </p>
+                    </div>
+
+                    <div class="bg-purple-50 rounded-xl p-6">
+                        <h4 class="font-semibold text-purple-900 mb-3">Confidence Intervals</h4>
+                        <p class="text-sm text-purple-800">
+                            Shows the range where the true bias likely falls.
+                            If CI includes 1.0, we can't conclude there's bias.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Honest Limitations</h2>
+
+            <div class="bg-white rounded-2xl shadow-lg p-8">
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">No Fine-Tuning Data</h4>
+                            <p class="text-gray-600">
+                                LinkedIn fine-tuned their model on 5 million member-item pairs. We use the base
+                                LLaMA model, which means our results reflect foundational model biases, not
+                                production system biases.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Name-Based Bias Only</h4>
+                            <p class="text-gray-600">
+                                We only test bias based on name changes. Other potential biases (location,
+                                education, profile photo) are not captured in this analysis.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Simulated Profiles</h4>
+                            <p class="text-gray-600">
+                                Test data uses synthetic profiles, not real LinkedIn data. Results indicate
+                                potential for bias but not its actual manifestation on the platform.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="bg-amber-100 rounded-full p-2">
+                            <svg class="w-6 h-6 text-amber-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Downstream Effects Unknown</h4>
+                            <p class="text-gray-600">
+                                Even if similarity scores differ, we don't know how LinkedIn's ranking
+                                algorithms weight these embeddings in final results.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-4">
+                    <img src="https://www.trustinsights.ai/wp-content/uploads/2017/12/2021-02-23_12-58-20.jpg"
+                         alt="TrustInsights.ai" class="h-12">
+                    <div>
+                        <p class="font-heading text-lg">TrustInsights.ai</p>
+                        <p class="text-gray-400 text-sm">AI-Powered Analytics & Insights</p>
+                    </div>
+                </div>
+                <div class="text-center md:text-right text-sm text-gray-400">
+                    <p>LinkedIn Bias Auditor - Methodology Explainer</p>
+                    <p class="mt-1">Based on LinkedIn's research (arXiv:2510.14223)</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

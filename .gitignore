@@ -1,0 +1,48 @@
+# Credentials (keep .dist version)
+credentials.yml
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+*.egg
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Project-specific exclusions
+logs/
+input/
+models/
+.claude/
+.serena/
+checkpython.sh
+
+# Large video files (hosted externally)
+videos/
+
+# Documentation and tests
+docs/
+tests/

@@ -1,0 +1,14 @@
+app:
+  name: "LinkedIn Bias Auditor"
+  log_level: "INFO"
+lm_studio:
+  base_url: "http://127.0.0.1:1234/v1"
+  model_id: "llama-3.2-3b"
+  timeout_seconds: 30
+  max_retries: 3
+paths:
+  input_dir: "data"
+  output_dir: "output"
+embedding:
+  model_path: "models/Llama-3.2-3B-bf16"
+  device: "mps"  # Options: "auto", "mps" (Apple Silicon), "cuda", "cpu"
